@@ -1,4 +1,4 @@
 scdf:
   enabled: true
-  rabbitmq:
-    enabled: true
+  # rabbitmq:
+  #   enabled: true
