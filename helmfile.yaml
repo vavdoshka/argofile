@@ -20,7 +20,3 @@ helmfiles:
 - path: releases/apps/scdf/helmfile.yaml
   values:
   - {{ toYaml .Values.scdf | nindent 4 }}
-
-- path: platforms/{{ requiredEnv "PLATFORM_ID" }}/helmfile.yaml
-  values:
-  - {{ toYaml .Values | nindent 4 }}
