@@ -1,15 +1,13 @@
-# release application level settings default in release defintions (with template defaults)
-
-# all platforms and all environments level settings (app default) - */*/APP
-# cirtain environment level setting (across all platforms) - */ENV/APP
-# concrete platform level settings for application - PLATFORM/*/APP
-# per env level settings - PLATFORM/ENV/APP
-
 environments:
-  preproduction:
+  staging:
     values:
-    - ../environments/globals/_all.yaml
-    - ../environments/globals/preproduction.yaml
-    - {{ requiredEnv "PLATFORM_ID" }}/locals/values.yaml
+    - environments/globals/_common.yaml
+    - environments/globals/staging.yaml
+    - platforms/{{ requiredEnv "PLATFORM_ID" }}/locals/values.yaml
 
 
+  production:
+    values:
+    - environments/globals/_common.yaml
+    - environments/globals/production.yaml
+    - platforms/{{ requiredEnv "PLATFORM_ID" }}/locals/values.yaml

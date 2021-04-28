@@ -8,6 +8,6 @@ releases:
   labels:
     chart: spring-cloud-dataflow
   values:
-    - values/_all.yaml.gotmpl
+    - values/_common.yaml.gotmpl
     - values/{{ .Environment.Name }}.yaml.gotmpl
   missingFileHandler: Info
