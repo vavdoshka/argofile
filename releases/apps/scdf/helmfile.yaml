@@ -1,10 +1,9 @@
-
 releases:
 - name: scdf
-  installed: {{ .Values | get "scdf.enabled" false }}
+  installed: {{ .Values | get "installed" false }}
 
   chart: bitnami/spring-cloud-dataflow
-  version: {{ .Values.scdf.version }}
+  version: {{ .Values.version }}
   labels:
     chart: spring-cloud-dataflow
   values:

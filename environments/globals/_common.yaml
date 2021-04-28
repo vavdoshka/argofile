@@ -1,4 +1,4 @@
 scdf:
   version: 2.10.0
   rabbitmq:
-    enabled: false
+    replicas: 3

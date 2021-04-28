@@ -1,4 +1,2 @@
 scdf:
-  enabled: true
-  # rabbitmq:
-  #   enabled: true
+  installed: true

@@ -1,2 +1,2 @@
-# scdf:
-#   enabled: true
+scdf:
+  installed: true
